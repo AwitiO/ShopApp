@@ -1,0 +1,96 @@
+/* Navigation bar */
+
+.Nav{
+  min-height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: black;
+
+}
+.Nav a{
+  color: white;
+  font-size: large;
+}
+.Nav span{
+  color:white;
+}
+.active Label{
+  color: white;
+  font-size: large;
+
+}
+
+/* product list */
+.header{
+  text-align: center;
+  line-height: 50vh;
+  font-weight: bolder;
+  font-size: x-large;
+  background-attachment: relative;
+  background-image: url(/Images/bags+shoes\ 2.jpg);
+  background-size: 100vh;
+  background-repeat: repeat;
+  font-size: 12pt;
+  color: rgba(128, 0, 0, 0.89);
+}
+
+.product-list{
+  background-color: lightblue;
+  padding: 3em;
+  margin-bottom: 2em;
+}
+.product-list .card{
+  background-color: blanchedalmond;
+  border-radius: 10px;
+  padding: 2em;
+  box-shadow: 0px 10px 5px gray;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.card .name{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+.card .image{
+  max-width: 100%;
+  border-radius: 5px;
+}
+.card .text{
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 2em;
+  font-size: 14px;
+}
+.card a{
+  background-color: chocolate;
+  border: none;
+  padding: 0.5em;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.product-container{
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+
+/* copyright section*/
+.footer p{
+    position: relative;
+    color: black;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    line-height: 11pt;
+    font-size: 11pt;
+    font-weight: normal;
+}
