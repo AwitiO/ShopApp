@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products </title>     
+    <title>Bashu Collections</title>     
 <link rel="stylesheet" href="styles/cart.css">
 <script src="https://kit.fontawesome.com/0e62e3bdc9.js" crossorigin="anonymous"></script>
 
@@ -11,27 +11,120 @@
 <body>   
     <!-- Navigation bar-->  
 <div class="Nav">
-    <a href="index.html"><i class="fas fa-house-user"></i>Home:</a>
-    <a href="products.html"><i class="fas fa-th"></i>Category:</a>
+    <a href="index.html"><i class="fas fa-house-user"></i>Home</a>
+    <a href="products.html"><i class="fas fa-th"></i>Products</i></a>
     <form class="active">
     <label for="psearch"></label><input type="search" id="psearch" name="psearch" placeholder="I'm shopping for">
-    <label for="zip_code">Zipcode:</label><input type="text" id="zip_code" name="zip_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+    <label for="zip_code">Zipcode</label><input type="text" id="zip_code" name="zip_code" pattern="[A-Za-z]{3}" title="Three letter country code">
     <input type="submit">
     </form>
     <button type="submit">Sign in </button>
     </div>
     
-<!-- product details -->
+<!-- cart items details -->
 
-       </div>
-       <div class="footer">
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="/Images/nico-louis.jpg" alt="bag">
+                    <div>
+                        <p>Nico louis</p>
+                        <small>Price: 3200KES</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><Input type="number" value="1"></Input></td>
+            <td>3200KES</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="/Images/black-six-inch.jpg" alt="heels">
+                    <div>
+                        <p>HiTime Heels</p>
+                        <small>Price: 2800KES</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><Input type="number" value="1"></Input></td>
+            <td>2800KES</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="/Images/Wallet-1.jpg" alt="wallet">
+                    <div>
+                        <p>Forever Young</p>
+                        <small>Price: 1000KES</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><Input type="number" value="1"></Input></td>
+            <td>1000KES</td>
+        </tr>
+    </table>
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>6140KES</td>
+            </tr>
+            <tr>
+                <td>VAT</td>
+                <td>860KES</td>
+            </tr>
+            <tr>
+                <td>Delivery</td>
+                <td>500KES</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>7500KES</td>
+            </tr>
+        </table>
+    </div>
+</div>
+      
+       <!-- footer -->
 
-        <p>Bashu Collection is your onestop online shop for ladies classy handbags and shoes. 
-           Follow us on instagram @Bashu_collections and on facebook @Bashu Collections. Copyright@Bashu2020. All Rights Reserved</p>
-           
+<div class="footer">
+    <div class="row">
+        <div class="column">
+            <h1>Download our App</h1>
+            <p>Download App for android and ios mobile phone</p>
+            <img src="/Images/Appstore.jpg" alt="App">
         </div>
-   </div>
-
-
+        <div class="column">
+            <p>Bashu Collections is your onestop online shop for ladies classy 
+               handbags and shoes. <br>
+               All rights reserved. copyright@2020 Bashu Collections
+            </p>
+        </div>
+        <div class="column">
+             <h2>Follow Us</h2>
+            <ul>
+                <li>Facebook @Bashu Collections</li>
+                <li>Twitter @Bashu_collections</li>
+                <li>Instagram @Bashu_collections</li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+       
     </body>
-    </html>
+    
+</html>

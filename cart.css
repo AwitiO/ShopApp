@@ -1,0 +1,129 @@
+
+.Nav{
+    min-height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: black;
+  
+  }
+  .Nav a{
+    color: white;
+    font-size: large;
+    text-decoration: none;
+  }
+  .Nav span{
+    color:white;
+  }
+  .active Label{
+    color: white;
+    font-size: large;
+  
+  }
+  
+  /* Cart items */
+.cart-page{
+ margin: 80px auto;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+
+}
+.cart-info{
+  display: flex;
+  flex-wrap: wrap;
+}
+th{
+  text-align: left;
+  padding: 5px;
+  color: white;
+  background-color: brown;
+  font-weight: normal;
+}
+td{
+  padding: 10px 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+td input{
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+} 
+td a{
+  color: brown;
+  font-size: 12px;
+  text-decoration: none;
+}
+td img{
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+.total-price{
+  display: flex;
+  justify-content: flex-end;
+}
+.total-price table{
+  border-top: 3px solid brown;
+  width: 100%;
+  max-width: 400px;
+}
+td:last-child{
+  text-align: right;
+}
+th:last-child{
+  text-align: right;
+}
+
+
+
+/* footer*/
+.column{
+  color:gray;
+  float: left;
+  width: 33.33%;
+  flex: 30%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 8px;
+  position: relative;
+  font-size: 16px;
+  background-color: blanchedalmond;
+}
+.row::after{
+  display: table;
+  clear: both;
+}
+.column img{
+  width: 120px;
+  margin-bottom: 20px;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+}
+.column h1{
+  text-align: left;
+  font-size: large;
+}
+.column h2{
+  text-align: center;
+  font-size: large;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  body{
+      width: 100%;
+  }
+}
