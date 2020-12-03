@@ -33,7 +33,7 @@
   font-weight: bolder;
   font-size: x-large;
   background-attachment: fixed;
-  background-image: url(/Images/bags+shoes\ 2.jpg);
+  background-image: url(../images/bags-shoes.jpg);
   background-size: 100vh;
   background-repeat: repeat;
   font-size: 12pt;
@@ -75,6 +75,8 @@
   padding: 0.5em;
   border-radius: 5px;
   font-weight: bold;
+  text-decoration: none;
+  color: black;
 }
 .product-container{
   display: grid;
@@ -94,6 +96,7 @@
   padding: 8px;
   position: relative;
   font-size: 16px;
+  background-color: blanchedalmond;
 }
 .row::after{
   display: table;
