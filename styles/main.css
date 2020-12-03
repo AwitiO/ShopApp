@@ -14,6 +14,7 @@
 .Nav a{
     color: white;
     font-size: large;
+    text-decoration: none;
 }
 .Nav span{
     color:white;
@@ -25,7 +26,7 @@
 }
 /* splash section */
 .splash-section .header {
-    position: fixed;
+    position: relative;
     width:100%;
     height: 100%;
     text-align: center;
@@ -43,16 +44,47 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* copyright section*/
-.footer p{
-       position: fixed;
-       color: white;
-       right: 0;
-       bottom: 0;
-       text-align: center;
-       width: 100%;
-       line-height: 11pt;
-       font-size: 10pt;
-       font-weight: normal;
-   }
-   
+/* footer*/
+.column{
+    color:white;
+    float: left;
+    width: 33.33%;
+    flex: 30%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 8px;
+    position: relative;
+    font-size: 16px;
+}
+.row::after{
+    display: table;
+    clear: both;
+}
+.column img{
+    width: 120px;
+    margin-bottom: 20px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.column h1{
+    text-align: left;
+    font-size: large;
+}
+.column h2{
+    text-align: center;
+    font-size: large;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+    body{
+        width: 100%;
+    }
+  }

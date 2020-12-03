@@ -14,6 +14,7 @@
 .Nav a{
   color: white;
   font-size: large;
+  text-decoration: none;
 }
 .Nav span{
   color:white;
@@ -46,28 +47,62 @@
 .card i{
   color: goldenrod;
 }
-.card button {
+.card a{
   border: none;
   outline: 0;
-  padding: 10px;
+  padding: 0 250px;
   color: white;
   background-color: brown;
   text-align: center;
   width: 50%;
   font-size: 18px;
   margin-top: 10px;
+  text-decoration: none;
 }
 
 
-/* copyright section*/
-.footer p{
-    position: relative;
-    color: black;
-    right: 0;
-    bottom: 0;
-    text-align: center;
+
+/* footer*/
+.column{
+  color:gray;
+  float: left;
+  width: 33.33%;
+  flex: 30%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 8px;
+  position: relative;
+  font-size: 16px;
+}
+.row::after{
+  display: table;
+  clear: both;
+}
+.column img{
+  width: 120px;
+  margin-bottom: 20px;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+}
+.column h1{
+  text-align: left;
+  font-size: large;
+}
+.column h2{
+  text-align: center;
+  font-size: large;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .column {
     width: 100%;
-    line-height: 11pt;
-    font-size: 11pt;
-    font-weight: normal;
+  }
+  body{
+      width: 100%;
+  }
 }
