@@ -37,7 +37,7 @@
     font-size: x-large;
 }
 body{
-    background-image: url(../Images/homepage.jpg);
+    background-image: url(../images/homepage.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
